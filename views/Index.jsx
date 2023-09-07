@@ -10,10 +10,10 @@ function Index(props){
           <a href="/pokemon/new">New Pokemon</a>
         </nav>
         <ul>
-          {pokemon.map((poki, i) => {
+          {pokemon.map((poki) => {
             return (
-              <li key={i}>
-                <a href={`/pokemon/show/${i}`}>{poki.name}</a>
+              <li key={poki._id}>
+                <a href={`/pokemon/show/${poki._id}`}>{poki.name}</a>
               </li>
             );
           })}
