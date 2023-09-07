@@ -5,6 +5,7 @@ function Show(props) {
   return (
     <div>
       <h1>Gotta Catch 'Em All</h1>
+
       <h2>
         {pokemon[ids].name.charAt(0).toUpperCase() + pokemon[ids].name.slice(1)}
       </h2>
