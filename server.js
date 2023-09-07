@@ -34,6 +34,11 @@ app.get('/pokemon',(req,res)=>{
     res.render('Index',{pokemon:pokemon})
 })
 
+app.get("/pokemon/show/:id",(req,res)=>{
+    const index = req.params.id
+    res.render('Show',{pokemon:pokemon,ids:index})
+});
+
 
 
 
